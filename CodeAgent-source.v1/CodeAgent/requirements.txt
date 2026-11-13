@@ -1,0 +1,4 @@
+# CodeAgent runtime dependencies: NONE beyond the Python standard library.
+# Python 3.10+ (GUI uses tkinter, HTTP uses urllib, secrets use Windows DPAPI).
+#
+# For development / testing / packaging see requirements-dev.txt.
