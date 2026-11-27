@@ -1,4 +1,4 @@
-# CodeAgent – DeepSeek V4 Pro-Powered AI Coding Agent
+# CodeAgent
 
 An autonomous AI coding agent that transforms software architecture documentation and UML diagrams into structured software projects using the official DeepSeek V4 Pro API.
 
