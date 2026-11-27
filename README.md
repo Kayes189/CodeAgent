@@ -1,70 +1,73 @@
-# CodeAgent
+# CodeAgent 3.1.0 – User Guide
 
-An autonomous AI coding agent that transforms software architecture documentation and UML diagrams into structured software projects using the official DeepSeek V4 Pro API.
+CodeAgent is an AI-powered coding agent that transforms software architecture documentation and architecture diagrams into structured software projects.
 
-## Overview
+## 🚀 How to Use CodeAgent
 
-CodeAgent is a Windows desktop application designed to automate software project generation from architecture documentation.
+### Step 1. Launch the Application
+Download and launch the CodeAgent Windows executable from the GitHub Releases section.
 
-Users can provide architecture documents, UML diagrams, configure their DeepSeek API key, and specify an output directory. The agent analyzes the supplied materials and generates project files through an iterative AI tool-calling workflow.
+### Step 2. Configure the AI Provider
+- Select your preferred AI provider.
+- Choose an available AI model.
+- Configure the required settings, such as region or Workspace ID.
+- Enable thinking if supported by the selected model.
 
-## Key Features
+### Step 3. Configure Your API Key
+- Obtain an API key from your selected provider.
+- Paste it into the **API Key** field.
+- Click **Test Connection** to verify the connection.
+- Click **Save Key** to save your configuration.
 
-- DeepSeek V4 Pro API integration.
-- Autonomous AI agent workflow.
-- Architecture documentation preprocessing.
-- PlantUML diagram processing.
-- Automated project file generation.
-- Tool-based file operations.
-- Windows desktop graphical interface.
-- API usage tracking.
-- Project validation and automated tests.
-- Standalone Windows executable packaging.
+### Step 4. Provide Architecture Files
 
-## Target Project: Space Fractions
+Under the **Task Inputs & Output** section, provide:
 
-The project demonstrates architecture-driven software generation using Space Fractions, an educational mathematics game designed for sixth-grade students.
+- **Architecture Documentation (.md):** Select your software architecture documentation.
+- **Architecture Views (.md):** Select your architecture diagrams and views.
+- **Output Directory:** Choose where the generated project will be saved.
 
-The generated game is intended to provide an interactive desktop learning experience with fraction questions, answer feedback, scoring, and a final results screen.
+### Step 5. Add Extra Instructions (Optional)
+Provide additional requirements, such as the programming language, interface design, or testing requirements.
 
-## Technology Stack
+### Step 6. Start CodeAgent
+Click **Start** to begin the generation process. The agent will analyze the provided architecture materials and generate the software project.
 
-- Python
-- Tkinter
-- DeepSeek V4 Pro API
-- REST API / Tool Calling
-- PlantUML
-- PyInstaller
-- Pytest
+### Step 7. Monitor Execution
+Use the available controls to manage the workflow:
 
-## Project Structure
+- **Stop:** Stop execution.
+- **Resume:** Continue execution when supported.
+- **Restart:** Restart the workflow.
+- **Status:** Check the current execution status.
+- **Open Output:** Open the generated project directory.
 
-The repository contains the CodeAgent source code, tests, documentation, configuration files, and Windows build instructions.
+You can also monitor the agent's activities through the **Agent Activity Log**.
 
-## Getting Started
+### Step 8. Review the Generated Project
+Once generation is complete:
 
-1. Clone the repository.
-2. Install the dependencies listed in requirements.txt.
-3. Configure your DeepSeek API key.
-4. Launch the application.
-5. Select the architecture documentation and UML diagram files.
-6. Choose an output directory.
-7. Start the agent and review the generated project.
+1. Open the output directory.
+2. Review the generated source code and project structure.
+3. Run the generated application.
+4. Verify its functionality and execute the available tests.
 
-## Windows Executable
+## 💰 Token Usage & Cost
 
-A standalone Windows executable is provided through the GitHub Releases section.
+CodeAgent provides usage information, including:
 
-## Testing
+- Input and output tokens.
+- Number of API requests.
+- Estimated API cost.
+- Remaining budget.
 
-The project includes automated tests for core functionality, agent operations, and supporting components. Refer to the test documentation for execution instructions and results.
+## 🎮 Example Project: Space Fractions
 
-## Research References
+CodeAgent can be used to generate **Space Fractions**, an educational mathematics game for sixth-grade students featuring interactive fraction questions, answer feedback, scoring, and a final results screen.
 
-- https://github.com/ultraworkers/claw-code
-- https://github.com/Windy3f3f3f3f/how-claude-code-works
-- https://github.com/anthropics/claude-code
+## ⚠️ Important Notes
 
-## Disclaimer
-
-This project is an educational implementation of a simplified AI coding agent. DeepSeek API access requires a valid API key.
+- A valid API key is required.
+- API usage may incur charges depending on the provider and model.
+- Keep your API key private.
+- Always review generated code before running it.
